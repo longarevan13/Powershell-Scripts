@@ -64,7 +64,7 @@ Write-Host "2. Exchange"
 $choice3 = Read-Host "Enter Your Choice (1, 2)"
 Switch ($choice3) {
     1 {
-        CheckSystemUptime -ComputerName (Read-Host "Enter PC Name (E.g., jhe-ad-pk)")
+        CheckSystemUptime -ComputerName ($pcname)
     }
     2 {
         $isExchangeConnected = $false
